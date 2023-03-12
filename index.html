@@ -3,177 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <title>cssBayan</title>
-
-    <style>
-
-        body{
-            background-color: rgb(183, 210, 253);
-        }
-
-        .container{
-            font-size: 3vmin;
-            display:flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        label{
-            color:blue;
-            padding: 0em;
-        }
-   
-        input{
-            display: none;
-        }
-
-        .hidden {
-          /*  display: none; */
-          width:0%;
-            height:0%;
-        }
-
-        label:hover{
-            cursor: pointer;
-            
-        }
-
-        label:hover .hidden{
-            display: block;
-        }
-
-        input:checked + label img {
-            display:block;
-            width:70%;
-            height:70%;
-        }
-
-        input:checked + label, label:hover{
-            color: black;
-        }
-        
-        #color:active span {
-            color:black;
-            opacity: 0.6;
-        }
-
-        label:active img{
-            opacity: 0.6;
-        }
-
-        .text {
-            width: 40vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between
-            
-        }
-
-        .anim{
-            height: 0%;
-            width: 0%;
-            transition: all 1s ease;
-        }
-
-        .anim-wrap:hover .anim{
-            width:70%;
-            height:70%;
-           /* opacity: 0.75; */
-        } 
-
-        .bl:hover span, .bl:hover #icon{
-            color: black;
-            opacity: 100;
-        }
-
-        .bl:active span{
-            color:blue;
-        }
-      hr{
-        margin: 0%;
-        border: 0.1em solid rgb(38, 38, 147);
-        border-radius: 1em;  
-      }
-
-      #icon {
-        opacity: 0;
-        color: black;
-        transition: all .4s ease-in-out;
-      }
-
-      input:checked + label #icon{
-        opacity: 100;
-        transform: rotate(180deg);
-      }
-
-      label:hover #icon{
-        opacity: 100;
-        transform: rotate(180deg);
-
-      } 
-
-  
-    </style>
-   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/smile-upside.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/smile-upside.css' rel='stylesheet'>
   </head>
 
-  <body>
-
+    <body>
     <section class="container">
-        <h1 class="text">cssBayan</h1>
-    <div class="bl">
-        
- <hr/>
+        <h1 class="text" style="font-size: 4vmin">cssBayan</h1>
+        <div class="bl"> 
+        <hr/>
+            <div >
+                <input id="mem1" name="mem" type="radio" checked>
+                <label for="mem1" class="container anim-wrap" id="color">
+                    <div class="text">
+                        <span> Poor kitty and True horror</span>
+                        <i class="gg-smile-upside" id="icon"></i>
+                    </div>
+                    <img class="hidden anim" src="m1.png" alt="poor kitty">
+                </label>
+            </div>
+        <hr/>
+            <div >
+                <input  id="mem2" name="mem" type="radio">
+                <label for="mem2" class="container anim-wrap" id="color">
+                    <div class="text">
+                        <span> Learning Git</span>
+                        <i class="gg-smile-upside" id="icon"></i>
+                    </div>
+                    <img class="hidden anim" src="m2.png" alt="square cat">
+                </label>
+            </div>
+        <hr/>
         <div >
-            <input id="mem1" name="mem" type="radio" checked>
-            <label for="mem1" class="container anim-wrap" id="color">
-                <div class="text">
-                    <span> Mem1</span>
-                    <i class="gg-smile-upside" id="icon"></i>
-                </div>
-                <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="ьуь">
-            </label>
+                <input id="mem3" name="mem" type="radio">
+                <label for="mem3" class="container anim-wrap" id="color">
+                    <div class="text">
+                        <span> Real Truth</span>
+                        <i class="gg-smile-upside" id="icon"></i>
+                    </div>
+                    <img class="hidden anim" src="m3.png" alt="fried egg">
+                </label>
+            </div>
+        <hr/>
+            <div >
+                <input id="mem4" name="mem" type="radio">
+                <label for="mem4" class="container anim-wrap" id="color">
+                    <div class="text">
+                        <span> After codejam </span>
+                        <i class="gg-smile-upside" id="icon"></i>
+                    </div>
+                    <img class="hidden anim" src="m4.png" alt="hehe">
+                </label>
+            </div>
+        <hr/>
         </div>
-<hr/>
-        <div >
-            <input  id="mem2" name="mem" type="radio">
-            <label for="mem2" class="container anim-wrap" id="color">
-                <div class="text">
-                    <span> Mem1</span>
-                    <i class="gg-smile-upside" id="icon"></i>
-                </div>
-                
-                <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
-            </label>
-        </div>
-<hr/>
-       <div >
-            <input id="mem3" name="mem" type="radio">
-            <label for="mem3" class="container anim-wrap" id="color">
-                <div class="text">
-                    <span> Mem1</span>
-                    <i class="gg-smile-upside" id="icon"></i>
-                </div>
-                
-                <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
-            </label>
-        </div>
-<hr/>
-        <div >
-            <input id="mem4" name="mem" type="radio">
-            <label for="mem4" class="container anim-wrap" id="color">
-                <div class="text">
-                    <span> Mem1</span>
-                    <i class="gg-smile-upside" id="icon"></i>
-                </div>
-                
-                <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
-            </label>
-        </div>
-
-    </div>
-</section>
-  </body>
-
-  </html>
+        </section>
+    </body>
+</html>

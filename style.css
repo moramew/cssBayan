@@ -1,0 +1,136 @@
+
+    body{
+        background-color: rgb(183, 210, 253);
+    }
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: static;
+    }
+
+    label{
+        font-size: 1.5vw;
+        color:blue;
+        padding: 0.2em;
+    }
+   
+    input{
+        display: none;
+    }
+
+    .hidden {
+        width:0%;
+        height:0%;
+    }
+
+    input:checked + label img {
+        display:block;
+        width:50%;
+        height:50%;
+    }
+
+    input:checked + label{
+        color: black;
+    }
+        
+    #color:active span, label:active img {
+        color:black;
+        opacity: 0.6;
+    }
+
+    .text {
+        width: 40vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .anim{
+        height: 0%;
+        width: 0%;
+        transition: all 1s ease;
+        margin: 0%;
+    }
+
+    .bl{
+        width: 42%;
+    }
+
+    hr{
+        margin: 0%;
+        border: 0.1em solid rgb(38, 38, 147);
+        border-radius: 1em; 
+        opacity: 0.7;
+    }
+
+    #icon {
+        opacity: 0;
+        color: black;
+        transition: all .4s ease-in-out;
+    }
+
+    input:checked + label #icon{
+        opacity: 100;
+        transform: rotate(180deg);
+    }
+
+      
+
+    @media(hover:hover){
+        label:hover{
+            cursor: pointer;
+            color: black;
+        }
+
+        label:hover .hidden{
+            display: inline;
+        }
+
+        .bl:hover span, .bl:hover #icon{
+            color: black;
+            opacity: 100;
+        }
+
+        .bl:active span{
+            color:blue;
+        }
+
+        label:hover #icon{
+        opacity: 100;
+        transform: rotate(180deg);
+        } 
+
+        .anim-wrap:hover .anim{
+            width:50%;
+            height:50%;
+        } 
+    }
+
+    @media(hover:none){
+        #icon{
+            opacity: 100;
+            color: black;
+            transition: all .4s ease-in-out;
+        }
+
+        input:checked + label #icon{
+            opacity: 100;
+            transform: rotate(180deg);
+         }
+
+         .anim{
+            height: 0%;
+            width: 0%;
+            transition: all 1s ease;
+        }
+
+        input:checked + label .anim{
+            width:50%;
+            height:50%;
+        } 
+    }
+  
+    
