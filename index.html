@@ -12,7 +12,6 @@
 
 
         .container{
-           
             font-size: 3vmin;
             display:flex;
             flex-direction: column;
@@ -24,6 +23,7 @@
 
         label{
             color:blue;
+            padding: 0em;
         }
    
         input{
@@ -84,16 +84,43 @@
            /* opacity: 0.75; */
         } 
 
-        .bl:hover span{
+        .bl:hover span, .bl:hover #icon{
             color: black;
+           /* display: block;*/
+            opacity: 100;
         }
 
         .bl:active span{
             color:blue;
         }
-      
-    </style>
+      hr{
+        margin: 0%;
+        border: 0.1em solid rgb(38, 38, 147);
+        border-radius: 1em;  
+      }
 
+      #icon {
+       /* display: none;*/
+        opacity: 0;
+        color: black;
+        transition: all .4s ease-in-out;
+      }
+
+      input:checked + label #icon{
+       /* display: block;*/
+        opacity: 100;
+        transform: rotate(180deg);
+      }
+
+      label:hover #icon{
+        opacity: 100;
+        transform: rotate(180deg);
+
+      } 
+
+  
+    </style>
+   <link href='https://unpkg.com/css.gg@2.0.0/icons/css/smile-upside.css' rel='stylesheet'>
 
   </head>
 
@@ -103,49 +130,48 @@
         <h1 class="text">cssBayan</h1>
     <div class="bl">
         
- 
+ <hr/>
         <div >
             <input id="mem1" name="mem" type="radio" checked>
             <label for="mem1" class="container anim-wrap" id="color">
                 <div class="text">
                     <span> Mem1</span>
-                    <span> icon</span>
+                    <i class="gg-smile-upside" id="icon"></i>
                 </div>
-                
                 <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="ьуь">
             </label>
         </div>
-
+<hr/>
         <div >
             <input  id="mem2" name="mem" type="radio">
             <label for="mem2" class="container anim-wrap" id="color">
                 <div class="text">
                     <span> Mem1</span>
-                    <span> icon</span>
+                    <i class="gg-smile-upside" id="icon"></i>
                 </div>
                 
                 <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
             </label>
         </div>
-
+<hr/>
        <div >
             <input id="mem3" name="mem" type="radio">
             <label for="mem3" class="container anim-wrap" id="color">
                 <div class="text">
                     <span> Mem1</span>
-                    <span> icon</span>
+                    <i class="gg-smile-upside" id="icon"></i>
                 </div>
                 
                 <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
             </label>
         </div>
-
+<hr/>
         <div >
             <input id="mem4" name="mem" type="radio">
             <label for="mem4" class="container anim-wrap" id="color">
                 <div class="text">
                     <span> Mem1</span>
-                    <span> icon</span>
+                    <i class="gg-smile-upside" id="icon"></i>
                 </div>
                 
                 <img class="hidden anim" src="https://s09.stc.yc.kpcdn.net/share/i/4/1819939/wr-750.webp" alt="">
