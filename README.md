@@ -1,1 +1,1 @@
-https://GITHUB-USERNAME.github.io/cssBayan/cssBayan/index
+https://moramew.github.io/cssBayan/cssBayan/index
